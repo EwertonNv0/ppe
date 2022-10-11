@@ -1,0 +1,97 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1662998774586,
+    "data": [
+        {
+            "type": "file",
+            "name": "index.html",
+            "size": 34565,
+            "hash": "705648ee5fa417083391ad6abaffdb500318dfc761b3dd7ff9438b8c20609d13"
+        },
+        {
+            "type": "folder",
+            "name": "src"
+        },
+        {
+            "type": "file",
+            "name": "src/geral.css",
+            "size": 12391,
+            "hash": "151b62e4afe7862db26cc5e1683e4e90a62d904a23c6f4f553e2cb8b53085526"
+        },
+        {
+            "type": "folder",
+            "name": "src/images"
+        },
+        {
+            "type": "file",
+            "name": "src/styles-mobile.css",
+            "size": 74447,
+            "hash": "0c11bbf5eb51415adadc7758a02f306562e2962d1e514b1228d7906f603e6208"
+        },
+        {
+            "type": "file",
+            "name": "src/styles.css",
+            "size": 61636,
+            "hash": "49d68e43a8fe0aabe3a2c9b3ce04d5267242416998267e0a8e42eebfafe65c37"
+        },
+        {
+            "type": "folder",
+            "name": "src/videos"
+        },
+        {
+            "type": "file",
+            "name": "src/images/12ea99b6-004-refresh_101u01u000000000000028.png",
+            "size": 1479,
+            "hash": "8c4ad56353ea477d4b0c5ea7ccb0bd6378600ea132f42cb5a642e295ddd495cc"
+        },
+        {
+            "type": "file",
+            "name": "src/images/58124c24-005-group_101s01b000000000000028.png",
+            "size": 1057,
+            "hash": "a92c4a0a276b519cbfaee6232afcf8b38ff70df7e5eda5d097f98550d4c38383"
+        },
+        {
+            "type": "file",
+            "name": "src/images/5bcdb3c6-icon_101u01w000000000000028.png",
+            "size": 1373,
+            "hash": "068f050a54b92671ac4f33308c4ad32ba389e10c32d01942299ee66c9f4e8b6f"
+        },
+        {
+            "type": "file",
+            "name": "src/images/7cdfbae4-unnamed.gif",
+            "size": 33963,
+            "hash": "ea8a777e881a75cc988621a8b616961cfff6affe5af1f38fc50f6bc92a8182c6"
+        },
+        {
+            "type": "file",
+            "name": "src/images/cbf7aa56-dollar_101q01q000000000000028.png",
+            "size": 932,
+            "hash": "32d533d888bdb26867ad873f4d31029690cbdfea928cadad37c526e2903453cb"
+        },
+        {
+            "type": "file",
+            "name": "src/images/favicon.ico",
+            "size": 15406,
+            "hash": "0ed15f0e4f82b2f3d29b7465d4d2cd66e16ef2ca3e4eccffe5d69d692a925ec6"
+        },
+        {
+            "type": "file",
+            "name": "src/images/fb70b2d3-graph_101n01n000000000000028.png",
+            "size": 494,
+            "hash": "5996de4db814a46c576ba07a32882144c23d8dc3cb8fc1cb13a47b01dbf0b4d9"
+        },
+        {
+            "type": "file",
+            "name": "src/images/logo-01.png",
+            "size": 126757,
+            "hash": "63d316abd83c88642792cc014b9c29fb055c76bc914bb2fb1326946e04544e24"
+        },
+        {
+            "type": "file",
+            "name": "src/videos/video-bg.mp4",
+            "size": 44819537,
+            "hash": "3cef6f2d2e21925b829cea7922e9ef5d6d741bce3f17700d35131f201330482d"
+        }
+    ]
+}

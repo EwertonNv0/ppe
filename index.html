@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/src/geral.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/b93075f633.js" crossorigin="anonymous"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/src/images/favicon.ico" type="image/x-icon">
+
+    <title>PPE - Escola do Prina</title>
+</head>
+
+<body>
+    <header>
+        <div id="topo" class="mx-5 relative z-10">
+            <div class="mt-[20%] md:mt-[5%]">
+                <div>
+                    <img class="w-[100%] md:w-[50%] px-5" src="/src/images/logo-01.png" alt="">
+                </div>
+            </div>
+
+            <div class="mt-[10%] md:mt-[2%] md:pl-[5%] md:w-[80%]">
+                <p class="text-center font-bold text-2xl md:text-left md:text-4xl">
+                    <span class="font-color-gold">
+                        A PREPARAÇÃO É UMA MARATONA
+                    </span>
+                    <span class="font-color-white">
+                        &nbsp;e não uma corrida de 100 metros
+                    </span>
+                </p>
+            </div>
+
+            <div id="btt-wpp" class="mt-[10%] md:mt-[2%] md:pl-[5%]">
+                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5566996370373" target="_blank">
+                    <button class="button-style">
+                        <p class="text-center text-white">
+                            QUERO SER PPE
+                        </p>
+                    </button>
+                </a>
+            </div>
+
+            <div class="hidden md:flex ml-[16%] mt-5">
+                <a href="#foco" target="_self">
+                    <img class="w-14" src="/src/images/7cdfbae4-unnamed.gif" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute top-0 right-0 z-0 md:left-0">
+            <div class="w-[900px] md:w-full">
+                <video class="md:w-full" autoplay loop muted>
+                    <source src="/src/videos/video-bg.mp4">
+                </video>
+            </div>
+            <div class="video-cover"></div>
+        </div>
+    </header>
+
+    <section id="section-01" class="my-32 md:my-[20%] relative z-10">
+        <div id="foco" class="mx-5 md:mx-16 flex flex-cols justify-between">
+
+            <div id="img1-box" class="md:flex md:w-[60%]">
+                <img src="src/images/logo-ppe.png" alt="">
+            </div>
+
+            <div id="foco" class="bg-[#181818] py-10 px-5 rounded-2xl border-[1px] border-[#292929] md:w-[35%]">
+                <form method="POST" class="grid gap-y-10">
+                    <input class="w-full h-12 px-4 text-black rounded-md placeholder:text-black" name="nome" type="text"
+                        placeholder="Qual é o seu nome?" required="">
+
+                    <input class="w-full h-12 px-4 text-black rounded-md placeholder:text-black" name="telefone"
+                        type="tel" placeholder="Qual é o seu telefone/WhatsApp?" required="" maxlength="14">
+
+                    <select class="w-full h-12 px-4 text-black rounded-md" name="segmento" required="">
+                        <option value=""> Você quer informações para qual série?</option>
+                        <option value="ano-1">1º Ano do ensino médio</option>
+                        <option value="ano-2">2º Ano do ensino médio</option>
+                        <option value="ano-3">3º Ano do ensino médio</option>
+                        <option value="pre-vestibular">Curso pré-vestibular</option>
+                    </select>
+
+                    <button class="button-style2" type="submit">
+                        <p class="text-center text-white">
+                            Quero receber o contato da escola
+                        </p>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-32 md:my-[20%]">
+        <div class="mx-5 md:mx-16 flex flex-cols justify-between">
+            <div id="presenting-container" class="grid gap-y-5">
+                <div id="title-01">
+                    <h1 class="font-color-gold text-lg text-bold md:text-4xl">
+                        A preparação é uma maratona e não uma corrida de 100 metros.
+
+                    </h1>
+                </div>
+
+                <div id="presenting">
+                    <div class="part-01">
+                        <img src="src/images/sidebar.svg" alt="">
+                    </div>
+
+                    <div class="part-02">
+                        <div>
+                            <p class="text-md md:text-xl">
+                                &emsp;Iniciamos nossa história há uma década e já atendemos mais de mil alunos.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-md md:text-xl">
+                                &emsp;Estamos convictos de que a constância nos estudos é o fator mais importante para
+                                os grandes resultados.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-md md:text-xl">
+                                &emsp;Tratamos a preparação para o vestibular como uma maratona.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-md md:text-xl">
+                                &emsp;Precisamos de tempo e treinamento para encontrar as técnicas de estudo e
+                                realização de provas que melhor se adaptam à realidade de cada aluno.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-32 md:my-[20%]">
+        <div class="mx-5">
+            <div>
+                <h1 class="text-center text-2xl md:text-3xl">
+                    <span class="font-color-gold">
+                        Quais ferramentas disponibilizamos&nbsp;
+                    </span>
+                    <span class="font-color-white">
+                        para sua jornada?
+                    </span>
+                </h1>
+            </div>
+
+            <div class="grid md:grid-cols-2 md:gap-x-10 md:mx-[25%]">
+                <div
+                    class="mt-10 py-10 grid gap-y-4 custom-text-center border-[2px] border-solid border-color-[#FFF] rounded-2xl md:px-7">
+                    <div>
+                        <div class="img-resize">
+                            <img src="/src/images/ask-pngrepo-com.png" alt="">
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="font-bold text-2xl">
+                            Plantão de dúvidas
+                        </h2>
+                    </div>
+
+                    <div>
+                        <p>
+                            Nos horários de plantão os professores ficam à disposição dos alunos para auxiliar nas
+                            dificuldades que aparecem no momento do estudo, afinal é a partir desses questionamentos que
+                            o conhecimento consolida-se de forma mais eficiente.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-10 py-10 grid gap-y-4 custom-text-center border-[2px] border-solid border-[#FFF] rounded-2xl md:px-7">
+                    <div>
+                        <img src="/src/images/fb70b2d3-graph_101n01n000000000000028.png" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="font-bold text-2xl">
+                            Sistema de redação acima da média
+                        </h2>
+                    </div>
+
+                    <div>
+                        <p>
+                            Todos os alunos, desde o primeiro ano do ensino médio, escrevem uma redação por semana, que
+                            pode ser corrigida presencialmente com um professor que, além de fazer a correção, já
+                            discute individualmente as melhores estratégias para alcançar a nota máxima.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-10 py-10 grid gap-y-4 custom-text-center border-[2px] border-solid border-[#FFF] rounded-2xl md:px-7">
+                    <div class="img-resize">
+                        <img src="/src/images/test-pngrepo-com.png" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="font-bold text-2xl">
+                            Simulados
+                        </h2>
+                    </div>
+
+                    <div>
+                        <p>
+                            Para atingir boas notas nos vestibulares não basta apenas saber o conteúdo, é preciso estar
+                            por dentro do modelo de provas, conhecer os editais e, principalmente, ter disciplina e
+                            treinamento adequado. Desde o primeiro ano, trabalhamos com a aplicação de simulados aos
+                            sábados para atingir o condicionamento ideal.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-10 py-10 grid gap-y-4 custom-text-center border-[2px] border-solid border-[#FFF] rounded-2xl md:px-7">
+                    <div>
+                        <img src="/src/images/58124c24-005-group_101s01b000000000000028.png" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="font-bold text-2xl">
+                            Turmas reduzidas
+                        </h2>
+                    </div>
+
+                    <div>
+                        <p>
+                            Acreditamos que a proximidade entre o professor e o aluno gera a empatia necessária para
+                            transpor os maiores desafios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-12">
+        <div class="mx-5 text-center text-2xl flex-center">
+            <div class="circle-quotation">
+                <p class="icon-quotation text-4xl">
+                    "
+                </p>
+            </div>
+
+            <div class="my-5 md:mb-24">
+                <h2 class="md:text-3xl">
+                    <span>O que</span>
+                    <span class="font-color-gold">nossos alunos</span>
+                    <span>dizem?</span>
+                </h2>
+            </div>
+
+            <div class="grid gap-y-10 md:grid-cols-2 md:gap-x-10 md:w-[60%]">
+                <div>
+                    <video class="w-full rounded-md" type="video/mp4" controls preload="metadata">
+                        <source src="/src/videos/ano-1-giulia.mp4">
+                    </video>
+                </div>
+
+                <div>
+                    <video class="w-full rounded-md" type="video/mp4" controls preload="metadata">
+                        <source src="/src/videos/ano-2-victor.mp4">
+                    </video>
+                </div>
+
+                <div>
+                    <video class="w-full rounded-md" type="video/mp4" controls preload="metadata">
+                        <source src="/src/videos/ano-3-bia.mp4">
+                    </video>
+                </div>
+
+                <div>
+                    <video class="w-full rounded-md" type="video/mp4" controls preload="metadata">
+                        <source src="/src/videos/ano-3-isabela.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div>
+            <div class="mx-5 text-center grid md:grid-cols-2 justify-between">
+                <div class="md:order-2 my-10 md:my-0">
+                    <a href="#topo" target="_self">
+                        <button id="btt-top" class="button-style2">
+                            <p class="text-center text-white">
+                                <i class="fa-solid fa-chevron-up"></i> RETORNAR AO TOPO
+                            </p>
+                        </button>
+                    </a>
+                </div>
+                <div id="text-footer-box" class="md:order-1">
+                    <p>
+                        <span>
+                            Todos os direitos reservados
+                        </span>
+                        <span>
+                            Escola do Prina &copy;
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            Desenvolvido por
+                        </span>
+                        <a href="http://nivelzero.com.br/" target="_blank">
+                            Nível Zero
+                        </a>
+                        <span>
+                            | 2022
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="social-links">
+                <ul>
+                    <li class="insta">
+                        <a href="https://www.instagram.com/ppevest" target="_blank">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                    </li>
+                    <li class="face">
+                        <a href="facebook.com/ppevest" target="_blank">
+                            <i class="fa-brands fa-square-facebook"></i> Facebook
+                        </a>
+                    </li>
+                    <li class="mail">
+                        <a href="mailto:contato@ppevest.com" target="_blank">
+                            <i class="fa-regular fa-envelope"></i> Email de Contato
+                        </a>
+                    </li>
+                    <li class="map">
+                        <a href="https://g.page/ppevest?share" target="_blank">
+                            <i class="fa-solid fa-map-location-dot"></i> Localização
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
