@@ -70,6 +70,10 @@ input{
 
 /* Styles */
 
+.form-box{
+    display: flex;
+    align-self: center;
+}
 .flex-center{
     display: flex;
     flex-direction: column;
@@ -97,7 +101,7 @@ input{
 .bg-snow{
     background-color: var(--snow);
 }
-#foco{
+#formulario{
     margin-top: 100px;
 }
 .button-style{
