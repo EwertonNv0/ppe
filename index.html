@@ -6,6 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })
+            (window, document, 'script', 'dataLayer', 'GTM-TV2XFQW');
+    </script>
+
     <!-- CSS -->
     <link href="/dist/output.css" rel="stylesheet">
     <link href="/src/geral.css" rel="stylesheet">
@@ -26,7 +39,7 @@
 
 <body>
     <header>
-        <div id="topo" class="mx-5 relative z-10">
+        <div id="inicio" class="mx-5 relative z-10">
             <div class="mt-[20%] md:mt-[5%]">
                 <div>
                     <img class="w-[100%] md:w-[50%] px-5" src="/src/images/logo-01.png" alt="">
@@ -54,8 +67,8 @@
                 </a>
             </div>
 
-            <div class="hidden md:flex ml-[16%] mt-5">
-                <a href="#foco" target="_self">
+            <div class="hidden md:flex ml-[16%] mt-5 scroll-to">
+                <a href="#formulario" target="_self">
                     <img class="w-14" src="/src/images/7cdfbae4-unnamed.gif" alt="">
                 </a>
             </div>
@@ -72,13 +85,13 @@
     </header>
 
     <section id="section-01" class="my-32 md:my-[20%] relative z-10">
-        <div id="foco" class="mx-5 md:mx-16 flex flex-cols justify-between">
+        <div id="formulario" class="mx-5 md:mx-16 flex flex-cols justify-between">
 
             <div id="img1-box" class="md:flex md:w-[60%]">
                 <img src="src/images/logo-ppe.png" alt="">
             </div>
 
-            <div id="foco" class="bg-[#181818] py-10 px-5 rounded-2xl border-[1px] border-[#292929] md:w-[35%]">
+            <div id="formulario" class="bg-[#181818] py-10 px-5 rounded-2xl border-[1px] border-[#292929] md:w-[35%]">
                 <form method="POST" class="grid gap-y-10">
                     <input class="w-full h-12 px-4 text-black rounded-md placeholder:text-black" name="nome" type="text"
                         placeholder="Qual é o seu nome?" required="">
@@ -299,7 +312,7 @@
         <div>
             <div class="mx-5 text-center grid md:grid-cols-2 justify-between">
                 <div class="md:order-2 my-10 md:my-0">
-                    <a href="#topo" target="_self">
+                    <a class="scroll-to" href="#inicio" target="_self">
                         <button id="btt-top" class="button-style2">
                             <p class="text-center text-white">
                                 <i class="fa-solid fa-chevron-up"></i> RETORNAR AO TOPO
@@ -373,6 +386,12 @@
             });
         });
     </script>
+    <script type="text/javascript" async
+        src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/4e0854e7-c09f-4724-8690-eaf418337af4-loader.js"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV2XFQW" height="0" width="0"
+            style="display:none; visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
