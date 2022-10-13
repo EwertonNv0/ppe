@@ -7,17 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })
-            (window, document, 'script', 'dataLayer', 'GTM-TV2XFQW');
-    </script>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); }) (window, document, 'script', 'dataLayer', 'GTM-TV2XFQW');</script>
 
     <!-- CSS -->
     <link href="/dist/output.css" rel="stylesheet">
@@ -38,6 +28,13 @@
 </head>
 
 <body>
+    <script type="text/javascript" async
+        src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/4e0854e7-c09f-4724-8690-eaf418337af4-loader.js"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV2XFQW" height="0" width="0"
+            style="display:none; visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header>
         <div id="inicio" class="mx-5 relative z-10">
             <div class="mt-[20%] md:mt-[5%]">
@@ -91,13 +88,17 @@
                 <img src="src/images/logo-ppe.png" alt="">
             </div>
 
-            <div id="formulario" class="bg-[#181818] py-10 px-5 rounded-2xl border-[1px] border-[#292929] md:w-[35%] form-box">
+            <div id="formulario"
+                class="bg-[#181818] py-10 px-5 rounded-2xl border-[1px] border-[#292929] md:w-[35%] form-box">
                 <form method="POST" class="grid gap-y-10">
                     <input class="w-full h-12 px-4 text-black rounded-md placeholder:text-black" name="nome" type="text"
                         placeholder="Qual é o seu nome?" required="">
 
-                    <input class="w-full h-12 px-4 text-black rounded-md placeholder:text-black" name="telefone"
-                        type="tel" placeholder="Qual é o seu telefone/WhatsApp?" required="" maxlength="14">
+                    <input class="w-full h-12 px-4 text-black rounded-md placeholder:text-black" name="email"
+                        type="email" placeholder="E o seu Email?" required="">
+
+                    <input id="phone" class="w-full h-12 px-4 text-black rounded-md placeholder:text-black" name="telefone"
+                        type="tel" placeholder="Qual é o seu telefone/WhatsApp?" required="" maxlength="15">
 
                     <select class="w-full h-12 px-4 text-black rounded-md" name="segmento" required="">
                         <option value=""> Você quer informações para qual série?</option>
@@ -385,11 +386,31 @@
                 }
             });
         });
+
+        // Mascara do telefone
+        function mascara(o, f) {
+            v_obj = o
+            v_fun = f
+            setTimeout("execmascara()", 1)
+        }
+        function execmascara() {
+            v_obj.value = v_fun(v_obj.value)
+        }
+        function mtel(v) {
+            v = v.replace(/\D/g, ""); //Remove tudo o que não é dígito
+            v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+            v = v.replace(/(\d)(\d{4})$/, "$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+            return v;
+        }
+        function id(el) {
+            return document.getElementById("phone");
+        }
+        window.onload = function () {
+            id('telefone').onkeyup = function () {
+                mascara(this, mtel);
+            }
+        }
     </script>
-    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/4e0854e7-c09f-4724-8690-eaf418337af4-loader.js"></script>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV2XFQW" height="0" width="0" style="display:none; visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
