@@ -411,6 +411,15 @@
             }
         }
     </script>
+    <script>
+        const formulario = document.querySelector('#formulario form')
+
+        window.addEventListener('load', () => {
+            formulario.addEventListener('submit', (event) => {
+                window.open('https://google.com', '_blank')
+            })
+        })
+    </script>
 </body>
 
 </html>
