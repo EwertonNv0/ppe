@@ -232,3 +232,55 @@ input{
 #footer li:hover{
     text-decoration: underline;
 }
+
+/* AGRADECIMENTO */
+
+#tks-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--patern-gray) !important;
+    padding-top: 10%;
+}
+#tks-container .tks-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+#tks-container .img-box img{
+    width: 80%;
+    margin: 0 auto;
+}
+#tks-container .txt-box{
+    width: 60%;
+}
+#tks-container .txt-box .txt{
+    text-align: center;
+}
+#tks-container .txt-box h1{
+    font-size: 3rem;
+}
+#tks-container .txt-box p{
+    font-size: 1.5rem;
+}
+@media screen and (min-width: 770px){
+    #tks-container .tks-box{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #tks-container .img-box img{
+        width: 50%;
+        margin: 0 0;
+    }
+    #tks-container .txt-box{
+        margin-left: -300px;
+        width: 60%;
+    }
+    #tks-container .txt-box h1{
+        font-size: 5rem;
+    }
+    #tks-container .txt-box p{
+        font-size: 2rem;
+    }
+}
